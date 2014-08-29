@@ -1,0 +1,19 @@
+{
+    "Package": "github.com/subosito/gotenv",
+    "Name": "gotenv",
+    "StarCount": 31,
+    "Synopsis": "Package gotenv provides functionality to dynamically load the environment variables",
+    "Description": "Package gotenv provides functionality to dynamically load the environment variables",
+    "Imported": [
+        "github.com/KevDog/go-stormpath",
+        "github.com/MongoHQ/forego",
+        "github.com/davidpelaez/forego",
+        "github.com/ddollar/forego",
+        "github.com/jweslley/forego",
+        "github.com/jwilder/forego",
+        "github.com/vendion/ssh-manage"
+    ],
+    "Imports": null,
+    "ProjectURL": "https://github.com/subosito/gotenv",
+    "StaticRank": 2373
+}

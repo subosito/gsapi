@@ -1,0 +1,586 @@
+[
+    {
+        "Name": "Hot",
+        "Info": "refs stars",
+        "Items": [
+            {
+                "Index": 1,
+                "Name": "mux",
+                "Package": "github.com/gorilla/mux",
+                "Link": "",
+                "Info": "1138 756"
+            },
+            {
+                "Index": 2,
+                "Name": "mgo",
+                "Package": "labix.org/v2/mgo",
+                "Link": "",
+                "Info": "755 0"
+            },
+            {
+                "Index": 3,
+                "Name": "websocket",
+                "Package": "code.google.com/p/go.net/websocket",
+                "Link": "",
+                "Info": "1097 2"
+            },
+            {
+                "Index": 4,
+                "Name": "mysql",
+                "Package": "github.com/go-sql-driver/mysql",
+                "Link": "",
+                "Info": "559 862"
+            },
+            {
+                "Index": 5,
+                "Name": "pq",
+                "Package": "github.com/lib/pq",
+                "Link": "",
+                "Info": "462 832"
+            },
+            {
+                "Index": 6,
+                "Name": "martini",
+                "Package": "github.com/go-martini/martini",
+                "Link": "",
+                "Info": "622 5154"
+            },
+            {
+                "Index": 7,
+                "Name": "sqlite3",
+                "Package": "github.com/mattn/go-sqlite3",
+                "Link": "",
+                "Info": "447 456"
+            },
+            {
+                "Index": 8,
+                "Name": "redis",
+                "Package": "github.com/garyburd/redigo/redis",
+                "Link": "",
+                "Info": "544 822"
+            },
+            {
+                "Index": 9,
+                "Name": "cli",
+                "Package": "github.com/codegangsta/cli",
+                "Link": "",
+                "Info": "512 1548"
+            },
+            {
+                "Index": 10,
+                "Name": "blackfriday",
+                "Package": "github.com/russross/blackfriday",
+                "Link": "",
+                "Info": "526 891"
+            },
+            {
+                "Index": 11,
+                "Name": "fsnotify",
+                "Package": "github.com/howeyc/fsnotify",
+                "Link": "",
+                "Info": "566 776"
+            },
+            {
+                "Index": 12,
+                "Name": "websocket",
+                "Package": "github.com/gorilla/websocket",
+                "Link": "",
+                "Info": "239 507"
+            },
+            {
+                "Index": 13,
+                "Name": "sessions",
+                "Package": "github.com/gorilla/sessions",
+                "Link": "",
+                "Info": "241 133"
+            },
+            {
+                "Index": 14,
+                "Name": "render",
+                "Package": "github.com/martini-contrib/render",
+                "Link": "",
+                "Info": "240 93"
+            },
+            {
+                "Index": 15,
+                "Name": "beego",
+                "Package": "github.com/astaxie/beego",
+                "Link": "",
+                "Info": "617 2844"
+            },
+            {
+                "Index": 16,
+                "Name": "oauth",
+                "Package": "code.google.com/p/goauth2/oauth",
+                "Link": "",
+                "Info": "272 24"
+            },
+            {
+                "Index": 17,
+                "Name": "uuid",
+                "Package": "code.google.com/p/go-uuid/uuid",
+                "Link": "",
+                "Info": "247 1"
+            },
+            {
+                "Index": 18,
+                "Name": "proto",
+                "Package": "code.google.com/p/goprotobuf/proto",
+                "Link": "",
+                "Info": "976 45"
+            },
+            {
+                "Index": 19,
+                "Name": "goquery",
+                "Package": "github.com/PuerkitoBio/goquery",
+                "Link": "",
+                "Info": "184 825"
+            },
+            {
+                "Index": 20,
+                "Name": "uuid",
+                "Package": "github.com/nu7hatch/gouuid",
+                "Link": "",
+                "Info": "232 72"
+            }
+        ]
+    },
+    {
+        "Name": "Hot Test",
+        "Info": "refs stars",
+        "Items": [
+            {
+                "Index": 1,
+                "Name": "gocheck",
+                "Package": "launchpad.net/gocheck",
+                "Link": "",
+                "Info": "2245 0"
+            },
+            {
+                "Index": 2,
+                "Name": "assert",
+                "Package": "github.com/stretchr/testify/assert",
+                "Link": "",
+                "Info": "716 524"
+            },
+            {
+                "Index": 3,
+                "Name": "convey",
+                "Package": "github.com/smartystreets/goconvey/convey",
+                "Link": "",
+                "Info": "498 1033"
+            },
+            {
+                "Index": 4,
+                "Name": "gomega",
+                "Package": "github.com/onsi/gomega",
+                "Link": "",
+                "Info": "856 148"
+            },
+            {
+                "Index": 5,
+                "Name": "ginkgo",
+                "Package": "github.com/onsi/ginkgo",
+                "Link": "",
+                "Info": "821 427"
+            },
+            {
+                "Index": 6,
+                "Name": "assert",
+                "Package": "github.com/bmizerany/assert",
+                "Link": "",
+                "Info": "606 67"
+            },
+            {
+                "Index": 7,
+                "Name": "check",
+                "Package": "gopkg.in/check.v1",
+                "Link": "",
+                "Info": "373 0"
+            },
+            {
+                "Index": 8,
+                "Name": "sqlite3",
+                "Package": "github.com/mattn/go-sqlite3",
+                "Link": "",
+                "Info": "269 456"
+            },
+            {
+                "Index": 9,
+                "Name": "pq",
+                "Package": "github.com/lib/pq",
+                "Link": "",
+                "Info": "229 832"
+            },
+            {
+                "Index": 10,
+                "Name": "mysql",
+                "Package": "github.com/go-sql-driver/mysql",
+                "Link": "",
+                "Info": "184 862"
+            },
+            {
+                "Index": 11,
+                "Name": "spew",
+                "Package": "github.com/davecgh/go-spew/spew",
+                "Link": "",
+                "Info": "77 240"
+            },
+            {
+                "Index": 12,
+                "Name": "mock",
+                "Package": "github.com/stretchr/testify/mock",
+                "Link": "",
+                "Info": "74 524"
+            },
+            {
+                "Index": 13,
+                "Name": "pretty",
+                "Package": "github.com/kr/pretty",
+                "Link": "",
+                "Info": "70 140"
+            },
+            {
+                "Index": 14,
+                "Name": "bson",
+                "Package": "labix.org/v2/mgo/bson",
+                "Link": "",
+                "Info": "48 0"
+            },
+            {
+                "Index": 15,
+                "Name": "prettytest",
+                "Package": "github.com/remogatto/prettytest",
+                "Link": "",
+                "Info": "29 83"
+            },
+            {
+                "Index": 16,
+                "Name": "suite",
+                "Package": "github.com/stretchr/testify/suite",
+                "Link": "",
+                "Info": "18 524"
+            },
+            {
+                "Index": 17,
+                "Name": "godrv",
+                "Package": "github.com/ziutek/mymysql/godrv",
+                "Link": "",
+                "Info": "125 322"
+            },
+            {
+                "Index": 18,
+                "Name": "goblin",
+                "Package": "github.com/franela/goblin",
+                "Link": "",
+                "Info": "19 133"
+            },
+            {
+                "Index": 19,
+                "Name": "gospec",
+                "Package": "github.com/orfjackal/gospec/src/gospec",
+                "Link": "",
+                "Info": "58 110"
+            },
+            {
+                "Index": 20,
+                "Name": "test",
+                "Package": "github.com/ant0ine/go-json-rest/rest/test",
+                "Link": "",
+                "Info": "8 803"
+            }
+        ]
+    },
+    {
+        "Name": "Most Imported",
+        "Info": "refs",
+        "Items": [
+            {
+                "Index": 1,
+                "Name": "gocheck",
+                "Package": "launchpad.net/gocheck",
+                "Link": "",
+                "Info": "2460"
+            },
+            {
+                "Index": 2,
+                "Name": "mux",
+                "Package": "github.com/gorilla/mux",
+                "Link": "",
+                "Info": "1308"
+            },
+            {
+                "Index": 3,
+                "Name": "websocket",
+                "Package": "code.google.com/p/go.net/websocket",
+                "Link": "",
+                "Info": "1120"
+            },
+            {
+                "Index": 4,
+                "Name": "proto",
+                "Package": "code.google.com/p/goprotobuf/proto",
+                "Link": "",
+                "Info": "995"
+            },
+            {
+                "Index": 5,
+                "Name": "gomega",
+                "Package": "github.com/onsi/gomega",
+                "Link": "",
+                "Info": "909"
+            },
+            {
+                "Index": 6,
+                "Name": "ginkgo",
+                "Package": "github.com/onsi/ginkgo",
+                "Link": "",
+                "Info": "863"
+            },
+            {
+                "Index": 7,
+                "Name": "bson",
+                "Package": "labix.org/v2/mgo/bson",
+                "Link": "",
+                "Info": "834"
+            },
+            {
+                "Index": 8,
+                "Name": "testing",
+                "Package": "github.com/juju/juju/testing",
+                "Link": "",
+                "Info": "817"
+            },
+            {
+                "Index": 9,
+                "Name": "mgo",
+                "Package": "labix.org/v2/mgo",
+                "Link": "",
+                "Info": "802"
+            },
+            {
+                "Index": 10,
+                "Name": "assert",
+                "Package": "github.com/stretchr/testify/assert",
+                "Link": "",
+                "Info": "779"
+            },
+            {
+                "Index": 11,
+                "Name": "mysql",
+                "Package": "github.com/go-sql-driver/mysql",
+                "Link": "",
+                "Info": "743"
+            },
+            {
+                "Index": 12,
+                "Name": "checkers",
+                "Package": "github.com/juju/testing/checkers",
+                "Link": "",
+                "Info": "723"
+            },
+            {
+                "Index": 13,
+                "Name": "sqlite3",
+                "Package": "github.com/mattn/go-sqlite3",
+                "Link": "",
+                "Info": "716"
+            },
+            {
+                "Index": 14,
+                "Name": "loggo",
+                "Package": "github.com/juju/loggo",
+                "Link": "",
+                "Info": "708"
+            },
+            {
+                "Index": 15,
+                "Name": "pq",
+                "Package": "github.com/lib/pq",
+                "Link": "",
+                "Info": "691"
+            },
+            {
+                "Index": 16,
+                "Name": "martini",
+                "Package": "github.com/go-martini/martini",
+                "Link": "",
+                "Info": "639"
+            },
+            {
+                "Index": 17,
+                "Name": "assert",
+                "Package": "github.com/bmizerany/assert",
+                "Link": "",
+                "Info": "631"
+            },
+            {
+                "Index": 18,
+                "Name": "beego",
+                "Package": "github.com/astaxie/beego",
+                "Link": "",
+                "Info": "617"
+            },
+            {
+                "Index": 19,
+                "Name": "fsnotify",
+                "Package": "github.com/howeyc/fsnotify",
+                "Link": "",
+                "Info": "608"
+            },
+            {
+                "Index": 20,
+                "Name": "cli",
+                "Package": "github.com/codegangsta/cli",
+                "Link": "",
+                "Info": "570"
+            }
+        ]
+    },
+    {
+        "Name": "Sites",
+        "Info": "packages",
+        "Items": [
+            {
+                "Index": 1,
+                "Name": "github.com",
+                "Package": "",
+                "Link": "http://github.com",
+                "Info": "87065"
+            },
+            {
+                "Index": 2,
+                "Name": "code.google.com",
+                "Package": "",
+                "Link": "http://code.google.com",
+                "Info": "1271"
+            },
+            {
+                "Index": 3,
+                "Name": "bitbucket.org",
+                "Package": "",
+                "Link": "http://bitbucket.org",
+                "Info": "782"
+            },
+            {
+                "Index": 4,
+                "Name": "gopkg.in",
+                "Package": "",
+                "Link": "http://gopkg.in",
+                "Info": "705"
+            },
+            {
+                "Index": 5,
+                "Name": "launchpad.net",
+                "Package": "",
+                "Link": "http://launchpad.net",
+                "Info": "321"
+            },
+            {
+                "Index": 6,
+                "Name": "camlistore.org",
+                "Package": "",
+                "Link": "http://camlistore.org",
+                "Info": "172"
+            },
+            {
+                "Index": 7,
+                "Name": "bazil.org",
+                "Package": "",
+                "Link": "http://bazil.org",
+                "Info": "64"
+            },
+            {
+                "Index": 8,
+                "Name": "code.minty.io",
+                "Package": "",
+                "Link": "http://code.minty.io",
+                "Info": "39"
+            },
+            {
+                "Index": 9,
+                "Name": "e8vm.net",
+                "Package": "",
+                "Link": "http://e8vm.net",
+                "Info": "38"
+            },
+            {
+                "Index": 10,
+                "Name": "azul3d.org",
+                "Package": "",
+                "Link": "http://azul3d.org",
+                "Info": "33"
+            },
+            {
+                "Index": 11,
+                "Name": "google.golang.org",
+                "Package": "",
+                "Link": "http://google.golang.org",
+                "Info": "32"
+            },
+            {
+                "Index": 12,
+                "Name": "j4k.co",
+                "Package": "",
+                "Link": "http://j4k.co",
+                "Info": "29"
+            },
+            {
+                "Index": 13,
+                "Name": "sourcegraph.com",
+                "Package": "",
+                "Link": "http://sourcegraph.com",
+                "Info": "29"
+            },
+            {
+                "Index": 14,
+                "Name": "honnef.co",
+                "Package": "",
+                "Link": "http://honnef.co",
+                "Info": "25"
+            },
+            {
+                "Index": 15,
+                "Name": "git.300brand.com",
+                "Package": "",
+                "Link": "http://git.300brand.com",
+                "Info": "23"
+            },
+            {
+                "Index": 16,
+                "Name": "git.tideland.biz",
+                "Package": "",
+                "Link": "http://git.tideland.biz",
+                "Info": "22"
+            },
+            {
+                "Index": 17,
+                "Name": "kylelemons.net",
+                "Package": "",
+                "Link": "http://kylelemons.net",
+                "Info": "20"
+            },
+            {
+                "Index": 18,
+                "Name": "cgl.tideland.biz",
+                "Package": "",
+                "Link": "http://cgl.tideland.biz",
+                "Info": "19"
+            },
+            {
+                "Index": 19,
+                "Name": "gopkg.cc",
+                "Package": "",
+                "Link": "http://gopkg.cc",
+                "Info": "18"
+            },
+            {
+                "Index": 20,
+                "Name": "golanger.com",
+                "Package": "",
+                "Link": "http://golanger.com",
+                "Info": "15"
+            }
+        ]
+    }
+]

@@ -1,40 +1,18 @@
 package gsapi
 
 import (
+	"bytes"
 	"encoding/json"
 	check "gopkg.in/check.v1"
-	"io"
+	"io/ioutil"
 	"net/http"
 	"net/http/httptest"
 	"net/url"
-	"strings"
+	"path/filepath"
 	"testing"
 )
 
 func Test(t *testing.T) { check.TestingT(t) }
-
-var fixtures = map[string]string{
-	"package": `
-		{
-			"Package": "github.com/subosito/gotenv",
-			"Name": "gotenv",
-			"StarCount": 31,
-			"Synopsis": "Package gotenv provides functionality to dynamically load the environment variables",
-			"Description": "Package gotenv provides functionality to dynamically load the environment variables",
-			"Imported": [
-				"github.com/KevDog/go-stormpath",
-				"github.com/MongoHQ/forego",
-				"github.com/davidpelaez/forego",
-				"github.com/ddollar/forego",
-				"github.com/jweslley/forego",
-				"github.com/jwilder/forego",
-				"github.com/vendion/ssh-manage"
-			],
-			"Imports": null,
-			"ProjectURL": "https://github.com/subosito/gotenv",
-			"StaticRank": 2373
-		}`,
-}
 
 func init() {
 	check.Suite(&APISuite{})
@@ -72,10 +50,10 @@ func (s *APISuite) TestNewClient(c *check.C) {
 }
 
 func (s *APISuite) TestClient_Package(c *check.C) {
-	out := fixtures["package"]
+	out := s.loadFixture("package.json")
 
 	s.mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		io.WriteString(w, out)
+		w.Write(out)
 	})
 
 	pkg, err := s.client.Package("github.com/subosito/gotenv")
@@ -87,6 +65,27 @@ func (s *APISuite) TestClient_Package(c *check.C) {
 	c.Assert(pkg, check.DeepEquals, want)
 }
 
-func (s *APISuite) jsonDecode(str string, v interface{}) error {
-	return json.NewDecoder(strings.NewReader(str)).Decode(v)
+func (s *APISuite) TestClient_Tops(c *check.C) {
+	out := s.loadFixture("tops.json")
+
+	s.mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		w.Write(out)
+	})
+
+	pkg, err := s.client.Tops()
+	c.Assert(err, check.IsNil)
+
+	want := []Top{}
+	err = s.jsonDecode(out, &want)
+	c.Assert(err, check.IsNil)
+	c.Assert(pkg, check.DeepEquals, want)
+}
+
+func (s *APISuite) jsonDecode(b []byte, v interface{}) error {
+	return json.NewDecoder(bytes.NewReader(b)).Decode(v)
+}
+
+func (s *APISuite) loadFixture(name string) []byte {
+	b, _ := ioutil.ReadFile(filepath.Join("fixtures", name))
+	return b
 }

@@ -59,14 +59,17 @@ func (c *Client) Package(pkg string) (Package, error) {
 	return p, nil
 }
 
-type Package struct {
-	Package     string
-	Name        string
-	StarCount   int
-	Synopsis    string
-	Description string
-	Imported    []string
-	Imports     []string
-	ProjectURL  string
-	StaticRank  int
+func (c *Client) Tops() ([]Top, error) {
+	t := []Top{}
+	d := url.Values{}
+	d.Set("action", "tops")
+	d.Set("len", "100")
+
+	req, _ := c.GetRequest(d)
+	_, err := c.Do(req, &t)
+	if err != nil {
+		return t, err
+	}
+
+	return t, nil
 }
