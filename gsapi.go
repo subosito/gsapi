@@ -1,6 +1,7 @@
 package gsapi
 
 import (
+	"encoding/json"
 	"net/http"
 	"net/url"
 )
@@ -20,6 +21,30 @@ func NewClient(httpClient *http.Client) *Client {
 	u, _ := url.Parse(BaseURL)
 
 	return &Client{url: u, client: httpClient}
+}
+
+func (c *Client) Package(pkg string) (Package, error) {
+	p := Package{}
+	d := url.Values{}
+	d.Set("action", "package")
+	d.Set("id", pkg)
+
+	u := c.url
+	u.RawQuery = d.Encode()
+
+	resp, err := c.client.Get(u.String())
+	if err != nil {
+		return p, err
+	}
+
+	defer resp.Body.Close()
+
+	err = json.NewDecoder(resp.Body).Decode(&p)
+	if err != nil {
+		return p, err
+	}
+
+	return p, nil
 }
 
 type Package struct {
