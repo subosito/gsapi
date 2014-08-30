@@ -81,6 +81,22 @@ func (s *APISuite) TestClient_Tops(c *check.C) {
 	c.Assert(pkg, check.DeepEquals, want)
 }
 
+func (s *APISuite) TestClient_Packages(c *check.C) {
+	out := s.loadFixture("packages.json")
+
+	s.mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		w.Write(out)
+	})
+
+	pkg, err := s.client.Packages()
+	c.Assert(err, check.IsNil)
+
+	want := Packages{}
+	err = s.jsonDecode(out, &want)
+	c.Assert(err, check.IsNil)
+	c.Assert(pkg, check.DeepEquals, want)
+}
+
 func (s *APISuite) TestClient_Search(c *check.C) {
 	out := s.loadFixture("search.json")
 

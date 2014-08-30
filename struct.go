@@ -1,5 +1,7 @@
 package gsapi
 
+type Packages []string
+
 type Package struct {
 	Package     string
 	Name        string

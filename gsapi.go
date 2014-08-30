@@ -78,6 +78,19 @@ func (c *Client) Tops() ([]Top, error) {
 	return t, nil
 }
 
+func (c *Client) Packages() (Packages, error) {
+	s := Packages{}
+	d := url.Values{}
+	d.Set("action", "packages")
+
+	err := c.perform(d, &s)
+	if err != nil {
+		return s, err
+	}
+
+	return s, nil
+}
+
 func (c *Client) Search(q string) (Result, error) {
 	r := Result{}
 	d := url.Values{}
