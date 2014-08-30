@@ -44,14 +44,19 @@ func (c *Client) Do(r *http.Request, v interface{}) (*http.Response, error) {
 	return resp, err
 }
 
+func (c *Client) perform(uv url.Values, v interface{}) error {
+	req, _ := c.GetRequest(uv)
+	_, err := c.Do(req, v)
+	return err
+}
+
 func (c *Client) Package(pkg string) (Package, error) {
 	p := Package{}
 	d := url.Values{}
 	d.Set("action", "package")
 	d.Set("id", pkg)
 
-	req, _ := c.GetRequest(d)
-	_, err := c.Do(req, &p)
+	err := c.perform(d, &p)
 	if err != nil {
 		return p, err
 	}
@@ -65,11 +70,24 @@ func (c *Client) Tops() ([]Top, error) {
 	d.Set("action", "tops")
 	d.Set("len", "100")
 
-	req, _ := c.GetRequest(d)
-	_, err := c.Do(req, &t)
+	err := c.perform(d, &t)
 	if err != nil {
 		return t, err
 	}
 
 	return t, nil
+}
+
+func (c *Client) Search(q string) (Result, error) {
+	r := Result{}
+	d := url.Values{}
+	d.Set("action", "search")
+	d.Set("q", q)
+
+	err := c.perform(d, &r)
+	if err != nil {
+		return r, err
+	}
+
+	return r, nil
 }

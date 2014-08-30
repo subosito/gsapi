@@ -81,6 +81,22 @@ func (s *APISuite) TestClient_Tops(c *check.C) {
 	c.Assert(pkg, check.DeepEquals, want)
 }
 
+func (s *APISuite) TestClient_Search(c *check.C) {
+	out := s.loadFixture("search.json")
+
+	s.mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		w.Write(out)
+	})
+
+	pkg, err := s.client.Search("gotenv")
+	c.Assert(err, check.IsNil)
+
+	want := Result{}
+	err = s.jsonDecode(out, &want)
+	c.Assert(err, check.IsNil)
+	c.Assert(pkg, check.DeepEquals, want)
+}
+
 func (s *APISuite) jsonDecode(b []byte, v interface{}) error {
 	return json.NewDecoder(bytes.NewReader(b)).Decode(v)
 }

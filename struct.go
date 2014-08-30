@@ -25,3 +25,17 @@ type Top struct {
 	Info  string
 	Items []Item
 }
+
+type Entry struct {
+	Name        string `json:"name"`
+	Package     string `json:"package"`
+	ProjectURL  string `json:"projecturl"`
+	Author      string `json:"author"`
+	Synopsis    string `json:"synopsis"`
+	Description string `json:"description"`
+}
+
+type Result struct {
+	Query string  `json:"query"`
+	Hits  []Entry `json:"hits"`
+}

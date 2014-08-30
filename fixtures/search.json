@@ -1,0 +1,29 @@
+{
+    "query": "gotenv",
+    "hits": [
+        {
+            "name": "gotenv",
+            "package": "github.com/subosito/gotenv",
+            "author": "subosito",
+            "synopsis": "Package gotenv provides functionality to dynamically load the environment variables",
+            "description": "Package gotenv provides functionality to dynamically load the environment variables",
+            "projecturl": "https://github.com/subosito/gotenv"
+        },
+        {
+            "name": "gotenv",
+            "package": "github.com/divoxx/gotenv",
+            "author": "divoxx",
+            "synopsis": "Package gotenv provides functionality to dynamically load the environment variables",
+            "description": "Package gotenv provides functionality to dynamically load the environment variables",
+            "projecturl": "https://github.com/divoxx/gotenv"
+        },
+        {
+            "name": "gotenv",
+            "package": "github.com/atomaths/gotenv",
+            "author": "atomaths",
+            "synopsis": "package gotenv provides functionality to load environment variables from `.env` file",
+            "description": "package gotenv provides functionality to load environment variables from `.env` file",
+            "projecturl": "https://github.com/atomaths/gotenv"
+        }
+    ]
+}
